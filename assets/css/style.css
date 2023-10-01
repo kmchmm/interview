@@ -1,0 +1,306 @@
+
+
+:root {
+    --main-color: #000000;
+    --second-color: #e5e5e5;
+    --third-color: #14213d;
+    --fourth-color: #fca311;
+    --first-font-color: #ffffff;
+    --secondary-font-color: #eaf4f4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--main-color);
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/***************************/
+/***************************/
+/*********HEADER PART**********/
+/***************************/
+/***************************/
+
+/***************************/
+/***************************/
+/*********MAIN PART**********/
+/***************************/
+/***************************/
+
+.crud-section, .crud-section-edit{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#crudBox{
+    background-color: var(--third-color);
+    max-width: 1660px;
+    width: 100%;
+    min-height: 90vh;
+    margin: 0 auto;
+}
+
+.main{
+    min-height: 75vh;
+    max-width: 95%;
+    width: 100%;
+    background-color: var(--secondary-font-color);
+    margin: 0 auto;
+    padding: 5px;
+}
+.addbutton{
+    width: 95%;
+    margin: 1em auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.add-button{
+    background-color: var(--fourth-color);
+    color: var(--first-font-color);
+    padding: 10px 15px;
+    font-weight: 700;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.modal{
+    display: none;
+    padding-top: 100px;
+}
+.modal-content{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 15px;
+}
+.modal-content h1{
+    font-weight: 700;
+}
+.close{
+    font-size: 2.5rem;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-content form{
+    margin-top: 2em;
+}
+.modal-content label{
+    font-weight: 700;
+}
+.modal-content input{
+    max-width: 100%;
+    width: 100%;
+    padding: 2px 5px;
+    margin-bottom: 1.5em;
+}
+.modal-content p{
+    font-weight: 700;
+}
+
+.modal-content input[type="radio"]{
+    cursor: pointer;
+    width: auto;
+    margin-right: .3em;
+}
+.modal-content input[type="submit"]{
+    background-color: var(--third-color);
+    color: var(--first-font-color);
+    padding: 10px 15px;
+    border: none;
+    font-weight: 700;
+    margin-top: 1em;
+    max-width: 200px;   
+}
+.modal-content input[type="submit"]:hover{
+    background-color: #2b55af;
+}
+table td{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#applicants {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    table-layout: fixed;
+    font-family: 'Poppins', sans-serif;
+        
+}
+
+#applicants th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--third-color);
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+  
+#applicants td, #applicants th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+  
+#applicants tr:nth-child(even){
+    background-color: var(--secondary-font-color);
+}
+  
+#applicants tr:hover {
+    background-color: var(--first-font-color);
+}
+ 
+.form-buttons{
+    gap: 1em;
+}
+#applicants button{
+    cursor: pointer;
+    border: none;
+    color: var(--first-font-color);
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: inherit;
+}
+#applicants .bx-low-vision{
+    background-color: #a881af;
+    padding: 5px 10px;
+}
+#applicants .bxs-edit{
+    background-color: #a7c957;
+    padding: 5px 10px;
+}
+#applicants .bxs-trash{
+    background-color: #780000;
+    padding: 5px 10px;
+}
+
+.show_modal_content{
+    background-color: #a881af;
+    min-height: 50vh;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.show_modal_content .show-close{
+    font-size: 2.5rem;
+    text-decoration: none;
+
+}
+
+.show_modal_content h1, .show-modal-content-divs{
+    color: var(--first-font-color);
+}
+.show_modal_content h1{
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+.show-labels{
+    width: 100%;
+    font-size: 1.1rem;
+    display: flex;
+    gap: 1em;
+    overflow: hidden;
+}
+
+
+
+/***************************/
+/***************************/
+/*********EDIT PART**********/
+/***************************/
+/***************************/
+
+.crud-section-edit #crudBox{
+    background-color: var(--third-color);
+    max-width: 1660px;
+    width: 100%;
+    min-height: 90vh;
+    margin: 0 auto;
+}
+
+.edit-heading-part{
+    color: var(--main-color);
+    max-width: 1660px;
+    width: 100%;
+    margin: 0 auto;
+    font-weight: 700;
+}
+.edit-heading-part h1{
+    font-weight: 700;
+}
+.edit-close{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.crud-section-edit #crudBox .bx-arrow-back{
+    color: var(--fourth-color);
+}
+.crud-section-edit #crudBox .bx-arrow-back:hover{
+    color: #855d1c;
+}
+
+.members-edit-container{
+    min-height: 50vh;
+    height: auto;
+    max-width: 80%;
+    width: 100%;
+    background-color: var(--secondary-font-color);
+    margin: 0 auto;
+    padding: 1em 2em;
+    margin-top: 1em;
+}
+.crud-section-edit #crudBox form{
+    width: 100%;
+}
+
+.crud-section-edit #crudBox form label, .crud-section-edit #crudBox form p{
+    font-weight: 700;
+    margin-top: .2em;
+}
+.crud-section-edit #crudBox form input{
+    width: 100%;
+    padding: 10px 15px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.crud-section-edit .gender-buttons div{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-right: 2em;
+}
+
+.edit-members-container button{
+    background-color: var(--third-color);
+    color: var(--first-font-color);
+    padding: 10px 15px;
+    width: 20%;
+    border: none;
+    margin-top: 1em;
+}
+.edit-members-container button:hover{
+    background-color: #2b55af;
+}
